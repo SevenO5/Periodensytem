@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Quicksand-med;
+    src: url(Quicksand-Medium.ttf);
+}
+body,html{background-color: #232323; scrollbar-color: #252525 #ff7f50;}
+body,html:hover{scrollbar-color: #252525 #ff6666;}
+h1{font-family: Quicksand-med; line-height: 1.9; font-weight: 500; cursor: default;  color: white; text-decoration: underline;}
+.c{display: flex;  justify-content: center; align-items: center;}
+.d{display: inline-block; width: 20mm; height: 20mm; border-left: solid 0.1mm transparent; outline:solid 0.1mm black;}
+.ds{display: inline-block; font-family: Noto Mono; letter-spacing: -0.2em; width: 20mm; height: 20mm; border-left: solid 0.1mm transparent;}
+.dG .ds{height: 9.5mm; grid-row: 2/3; border-left: solid 1px white; outline: none; display: flex; justify-content: center; border-bottom: solid 1px white;}
+.h{ opacity: 1;}
+.n{ opacity: 1;}
+.a{ background-color: #e2123f;}
+.e{ background-color: #fd8217;}
+.u{ background-color: #fbfb23;}
+.m{ background-color:#3be33b;}
+.x{ background-color: #009d9d;}
+.b{ background-color: #3e7d6b;}
+.s { background-color: #727272;}
+.k { background-color: #e74775;}
+.l { background-color:  #d2691e;}
+.g { background-color: #deb887;}
+.gridbox{display: grid; width: 100%; height: 100%; grid-template-rows: auto auto auto auto; grid-template-columns: auto auto auto auto;}
+.oz{grid-column-start: 1; grid-column-end: 1; grid-row-start: 1; grid-row-end: 1; display: flex; justify-content: center; align-items: center;}
+.ea{grid-column-start: 3;grid-column-end: 4;grid-row-start: 1;grid-row-end: 3;font-size: 27.5pt;display: flex;justify-content: center;align-items: center;}
+.nomen{grid-column-start: 1; grid-column-end: 5; grid-row-start: 4; grid-row-end: 5;font-size: 9pt; display: flex;  justify-content: center; align-items: center;}
+.innerGrid{width: 367mm; display: grid; gap: 0; margin: 0; grid-template-rows:auto auto auto auto auto auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;}
+.uh{grid-column-start: 1; grid-column-end: 4; grid-row-start: 2; grid-row-end: 4; display: flex; justify-content: center; align-items: center;}
+.outerWrap{ width: 100%; display: flex; justify-content:space-around; flex-wrap: wrap; flex-direction: column; align-items: center; font-family: Quicksand-med;}
+.gridtwo{display: grid; grid-template-rows: auto auto; grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto; margin: 10mm 0 15mm 0; width: 280mm;}
+.middle{display: flex;}
+a{ color: black;  text-decoration: none;}
+a::after{color: black;}
+button{
+      display: flex;
+      flex-wrap: wrap;
+      border: none;
+      cursor: pointer;
+}
+
+.page{height: 230mm; width: 100%;}
+.zf{
+      background-color: transparent;
+}
+.dG{
+      grid-column-start: 1; grid-column-end: 19; 
+      grid-row-start: 1; grid-row-end: 1;
+      display: grid; 
+      grid-template-columns: calc(100%/18) calc(100%/18) calc(100%/18) calc(100%/18) calc(100%/18) calc(100%/18) calc(100%/18) calc(100%/18) calc(100%/18) calc(100%/18) calc(100%/18) calc(100%/18) calc(100%/18) calc(100%/18) calc(100%/18) calc(100%/18) calc(100%/18) calc(100%/18);
+      grid-template-rows: 50% 50%;
+      height: 20mm;
+      gap: 0;
+      color: white;
+}
+.dk{
+      grid-column-start: 3; grid-column-end: 13; 
+      grid-row-start: 4; grid-row-end: 5;
+      display: grid; 
+      grid-template-columns: calc(100%/10) calc(100%/10) calc(100%/10) calc(100%/10) calc(100%/10) calc(100%/10) calc(100%/10) calc(100%/10) calc(100%/10) calc(100%/10);
+      grid-template-rows: 50% 50%;
+      height: 20mm;
+      gap: 0;
+      color: white;
+}
+
+.dk .ds{height: 9.5mm; grid-row: 2/3; border-right: solid 1px white; outline: none; display: flex; justify-content: center;}
+.toggle {
+      margin:0 0 0 2rem;
+      position: relative;
+      display: inline-block;
+      width: 2rem;
+      height: 1.1rem;
+  }
+  
+  .toggle input {
+      display: none;
+  }
+  
+  .roundbutton {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      background-color: #33455e;
+      display: block;
+      transition: all 0.3s;
+      border-radius: 1.1rem;
+      cursor: pointer;
+  }
+  
+  .roundbutton:before {
+      position: absolute;
+      content: "";
+      height: 0.8rem;
+      width: 0.8rem;
+      border-radius: 100%;
+      display: block;
+      left: 0.1rem;
+      bottom: 0.15rem;
+      background-color: white;
+      transition: all 0.3s;
+  }
+  
+  input:checked + .roundbutton {
+      background-color: #FF6E48;
+  }
+  
+  input:checked + .roundbutton:before  {
+      transform: translate(0.85rem, 0);
+  }
+  
